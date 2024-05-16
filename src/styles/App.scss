@@ -1,6 +1,91 @@
 *{
-    padding: 10px;
+    padding: 5px;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    border: solid 1px pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__title{
+        color: rgb(66, 65, 90);
+    }
+
+    &__filter{
+        font-size: 10px;
+
+        &--select{
+            font-size: 10px;
+            width: fit-content;
+            border: solid 1px #d87093;
+            border-radius: 10px;
+        }
+    }
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card{
+    border: solid 1px #d87093;
+    background-color: rgb(252, 223, 252);
+    border-radius: 10px;
+    width: 230px;
+    color: rgb(66, 65, 90);
+}
+
+button{
+    font-size: 10px;
+    width: fit-content;
+    height: fit-content;
+    color: #d87093;
+    border: solid 1px #d87093;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+button:hover{
+    color: beige;
+    background-color: #d87093;
+}
+
+.form{
+    border: solid 1px pink;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    
+
+    &__input{
+        display: flex;
+        align-items: center;
+
+        &--field{
+            height: 20px;
+        }
+    }
+
+    &__btn{
+        margin-left: 10px;
+        width: fit-content;
+        color: #d87093;
+        border: solid 1px #d87093;
+        border-radius: 5px;
+        background-color: rgb(252, 223, 252);
+    }
+
+    &__btn:hover{
+        background-color: rgb(189, 254, 189);
+        color: #d87093;
+    }
 }

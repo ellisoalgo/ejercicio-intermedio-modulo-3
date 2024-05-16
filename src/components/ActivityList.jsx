@@ -1,12 +1,12 @@
 import Activities from "./Activities"
 
-const ActivityList = ({list, handleDelete}) => {
+const ActivityList = ({list}) => {
 
   return (
     <section>
-        <ul>
+        <ul className="list">
             {list.map((activity, index)=><li key={index}className="card">
-              <Activities activity={activity} index={index} list={list} handleDelete={handleDelete}/>
+              <Activities activity={activity} index={index} list={list}/>
             </li>)}
         </ul>
     </section>

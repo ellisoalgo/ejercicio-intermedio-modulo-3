@@ -1,6 +1,6 @@
 import '../styles/App.scss'
 //import PropTypes from 'prop-types'
-import { act, useState } from 'react'
+import { useState } from 'react'
 import Header from './Header'
 import ActivityList from './ActivityList'
 import Form from './Form'
@@ -53,7 +53,7 @@ function App() {
   return (
     <>
       <Header handleSelect={handleSelect}/>
-      <ActivityList list={searchResult} handleDelete={handleDelete}/>
+      <ActivityList list={searchResult} />
       <Form changeNewActivity={changeNewActivity} addNewActivity={addNewActivity}/>
     </>
   )

@@ -12,14 +12,20 @@ const Form = ({changeNewActivity, addNewActivity}) => {
   }
 
   return (
-    <form action="">
-      <label htmlFor="name">Nombre del club</label>
-      <input type="text" id="name" name="name" onChange={handleInput}/>
-      <label htmlFor="openOnWeekdays">¿Abre entre semana?</label>
-      <input type="checkbox" name="openOnWeekdays" id="openOnWeekdays" onChange={handleInput}/>
-      <label htmlFor="openOnWeekend">¿Abre los fines de semana?</label>
-      <input type="checkbox" name="openOnWeekend" id="openOnWeekend" onChange={handleInput} />
-      <input type="submit" value="Añadir nuevo club" onClick={handleClick}/>
+    <form action="" className="form">
+      <div className="form__input">
+        <label htmlFor="name">Nombre del club</label>
+        <input type="text" id="name" name="name" onChange={handleInput} className="form__input--field"/>
+      </div>
+      <div className="form__input">
+        <label htmlFor="openOnWeekdays">¿Abre entre semana?</label>
+        <input type="checkbox" name="openOnWeekdays" id="openOnWeekdays" onChange={handleInput}/>
+      </div>
+      <div className="form__input">
+        <label htmlFor="openOnWeekend">¿Abre los fines de semana?</label>
+        <input type="checkbox" name="openOnWeekend" id="openOnWeekend" onChange={handleInput} />
+      </div>
+      <input type="submit" value="Añadir nuevo club" onClick={handleClick} className="form__btn"/>
     </form>
   )
 }

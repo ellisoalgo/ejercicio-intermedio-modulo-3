@@ -1,4 +1,4 @@
-const Activities = ({activity, index, handleDelete}) => {
+const Activities = ({activity, index}) => {
 
   // const handleClickDelete =()=>{
   //   handleDelete(index)
@@ -7,9 +7,9 @@ const Activities = ({activity, index, handleDelete}) => {
   return (
     <article>
        {<h3>#{index}: {activity.name}</h3>  }
-       <p>Abierto entre semana: {activity.openOnWeekdays === true ? 'Sí' : 'No'}</p>
-       <p>Abierto fin de semana: {activity.openOnWeekend === true ? 'Sí' : 'No'}</p>
-       <button onClick={handleClickDelete} id={index}>Eliminar Actividad</button>
+       <p>Abierto entre semana: {activity.openOnWeekdays ? 'Sí' : 'No'}</p>
+       <p>Abierto fin de semana: {activity.openOnWeekend ? 'Sí' : 'No'}</p>
+       <button  id={index}>Eliminar Actividad</button>
     </article>
   )
 }
